@@ -1,7 +1,7 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.Configuration;
-import lombok.var;
+//import lombok.var;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.data.DataHelper;

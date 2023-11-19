@@ -11,7 +11,7 @@ public class DataHelper {
     }
 
     public static AuthInfo getAuthInfo() {
-        return new AuthInfo("vasya", "qwerty123);
+        return new AuthInfo("vasya", "qwerty123");
     }
 
     public static String generateRandomLogin() {
