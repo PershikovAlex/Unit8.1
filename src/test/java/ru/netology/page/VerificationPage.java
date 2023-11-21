@@ -10,11 +10,6 @@ public class VerificationPage {
     private SelenideElement verifyButton = $("[data-test-id=action-verify]");
     private SelenideElement errorNotification = $("[data-test-id=error-notification]");
 
-    public void verificationPageVisible() {
-
-        codeField.shouldBe(visible);
-    }
-
     public void verifyErrorNotificationVisible() {
         errorNotification.shouldBe(visible);
     }
@@ -29,6 +24,4 @@ public class VerificationPage {
         codeField.setValue(verificationCode);
         verifyButton.click();
     }
-
-    //negative
 }
