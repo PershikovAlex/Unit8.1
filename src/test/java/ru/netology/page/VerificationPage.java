@@ -15,10 +15,16 @@ public class VerificationPage {
         codeField.shouldBe(visible);
     }
 
-    public DashboardPage validVerify(DataHelper.VerificationCode verificationCode) {
-
-        codeField.setValue(verificationCode.getCode());
-        verifyButton.click();
+    public DashboardPage validVerify(String verificationCode) {
+        verify(verificationCode);
         return new DashboardPage();
     }
+
+    public void verify(String verificationCode) {
+
+        codeField.setValue(verificationCode);
+        verifyButton.click();
+    }
+
+    //negative
 }
