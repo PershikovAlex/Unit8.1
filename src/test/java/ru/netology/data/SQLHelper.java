@@ -10,6 +10,7 @@ import java.sql.SQLException;
 
 public class SQLHelper {
     private static QueryRunner runner = new QueryRunner();
+
     private SQLHelper() {
 
     }
